@@ -23,3 +23,18 @@ spring:
       max-total: 5 # 最大连接数
       max-wait-millis: 200 #等待超时时间
 
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+  instance:
+    instance-id: microservicecloud-dept-8001    #自定义服务名称 #显示访问IP
+    prefer-ip-address: true
+
+
+info:
+  app.name: zhymgc-cloud
+  company.name: www.baidu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
