@@ -2,7 +2,7 @@ server:
   port: 7003
 eureka:
   instance:
-    hostname: eureka7002.com #eureka的服务实例
+    hostname: eureka7003.com #eureka的服务实例
   client:
     register-with-eureka: false  #不像自己注册
     fetch-registry: false    # 表示自己就是注册中心
